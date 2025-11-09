@@ -4,7 +4,7 @@ A comprehensive PostgreSQL database schema design for a music streaming platform
 
 ## 📊 Entity-Relationship Diagram
 
-![Music Streaming Database ERD](music-app-schema-img.png)
+![Music Streaming Database ERD](musicapp-schema-img.png)
 
 ---
 
