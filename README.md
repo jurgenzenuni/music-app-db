@@ -53,15 +53,15 @@ This project demonstrates advanced database design concepts including:
 ## 📝 Example Queries
 
 Get a user's active subscription:
+
 SELECT u.username, p.plan_name, s.expires_at
 FROM users u
 JOIN subs s ON u.id = s.user_id
 JOIN plans p ON s.plan_id = p.plan_id
 WHERE u.id = 1 AND s.status = 'active';
 
-text
-
 Find most played songs:
+
 SELECT s.song_name, a.name as artist, COUNT(*) as play_count
 FROM listening_history lh
 JOIN songs s ON lh.song_id = s.id
@@ -70,9 +70,8 @@ GROUP BY s.song_name, a.name
 ORDER BY play_count DESC
 LIMIT 10;
 
-text
-
 Get all songs in a playlist:
+
 SELECT s.song_name, a.name as artist, s.length
 FROM list_content lc
 JOIN songs s ON lc.song_id = s.id
